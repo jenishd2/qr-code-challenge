@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Desktop Design */
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 700px;
+    border-radius: 10px;
+    background-color: var(--Light-gray);
+}
+
+#card{
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 480px;
+    background-color: var(--White);
+    filter: drop-shadow(2px 2px 5px var(--Grayish-blue));
+}
+#card h2{
+    /* font-weight: 700; */
+    margin: 10px 20px;
+    word-spacing: 5px;
+    text-align: center;
+}
+#card p{
+    margin: 10px 20px;
+    font-weight: 400;
+    width: 255px;
+    text-align: center;
+    color: var(--Grayish-blue);
+}
+#card img{
+    width: 80%;
+    border-radius: 10px;
+    transition: all 1s ;
+    filter: drop-shadow(2px 2px 5px var(--Grayish-blue));
+}
+
+
+/* This is For Mobile Design */
+@media screen and (max-width:375px) {
+    #card p{
+        font-size: 15px;
+    }
+    #card h2{
+        font-size: 25px;
+    }
+}
